@@ -1,0 +1,10 @@
+- name: "Python"
+  level: 75
+- name: "SQL"
+  level: 65
+- name: "PowerBI"
+  level: 70
+- name: "Data Engineering"
+  level: 60
+- name: "HTML / CSS / JS"
+  level: 55

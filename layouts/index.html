@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Kokoška - Portfolio</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div id="scrollProgress"></div>
+
+    <div class="topDiv">
+        <div class="logo">
+            <img class="sk" alt="SK logo" src="/pic/Untitled-SK.png" height="35" width="35">
+            <p>Samuel Kokoška</p>
+        </div>
+        <a class="hyperlink" href="/documents/SamuelKokoškaCV.pdf" target="_blank">RESUME PDF</a>
+    </div>
+
+    <header>
+        <div class="introDiv">
+            <div class="selfie">
+                <img src="/pic/selfie.jpg" alt="Samuel" width="430">
+            </div>
+            <div class="intro">
+                <h2>HI THERE, I AM</h2>
+                <h1><span id="typewriterSpan">almostAbachelor.</span> Samuel Kokoška</h1>
+            </div>
+        </div>
+
+        <nav>
+            <button class="button" onclick="switchTab('about', this)">ABOUT ME</button>
+            <button class="button" onclick="switchTab('studies', this)">STUDIES</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- TECH SKILLS -->
+        <section id="about" class="tabContent">
+            <h3 class="aboutContenth3">⚙️ tech skills</h3>
+            <div class="skillBars">
+                {{ range .Site.Data.skills }}
+                <div class="skillItem">
+                    <div class="skillLabel">
+                        <span>{{ .name }}</span><span class="skillPct">{{ .level }}%</span>
+                    </div>
+                    <div class="skillTrack"><div class="skillFill" style="width: {{ .level }}%;"></div></div>
+                </div>
+                {{ end }}
+            </div>
+        </section>
+
+        <!-- EDUCATION & CERTS -->
+        <section id="studies" class="tabContent">
+            <h3 class="edu">🎓 education</h3>
+            <div class="timeline">
+                {{ range .Site.Data.education }}
+                <div class="timelineItem">
+                    <h4 class="title">{{ .title }} <span class="date">{{ .date }}</span></h4>
+                    <p class="role">{{ .role }}</p>
+                    <p class="desc"><i>- {{ .desc }}</i></p>
+                </div>
+                {{ end }}
+            </div>
+
+            <h3 class="edu">📜 certifications</h3>
+            <div class="certificateGrid">
+                {{ range .Site.Data.certs }}
+                <div class="certificateItem">
+                    <h4 class="title">{{ .title }}</h4>
+                    <span class="date">{{ .date }}</span>
+                    <p class="role">{{ .role }}</p>
+                    <p class="desc">{{ .desc }}</p>
+                </div>
+                {{ end }}
+            </div>
+        </section>
+
+        <!-- WORK EXPERIENCE -->
+        <section id="experience" class="tabContent">
+            <!-- relevant roles-->
+            <h3 class="edu">💼 relevant experience</h3>
+            <div class="timeline">
+                {{ range where .Site.Data.work "relevant" true }}
+                <div class="timelineItem">
+                    <h4 class="title">{{ .title }} <span class="date">{{ .date }}</span></h4>
+                    <p class="role">{{ .company }}</p>
+                    <p class="desc"><i>- {{ .desc }}</i></p>
+                </div>
+                {{ end }}
+            </div>
+
+            <!-- other roles -->
+            <h3 class="edu" style="margin-top: 2.5rem;">🛠️ other work experience</h3>
+            <div class="timeline">
+                {{ range where .Site.Data.work "relevant" false }}
+                <div class="timelineItem">
+                    <h4 class="title">{{ .title }} <span class="date">{{ .date }}</span></h4>
+                    <p class="role">{{ .company }}</p>
+                    <p class="desc"><i>- {{ .desc }}</i></p>
+                </div>
+                {{ end }}
+            </div>
+        </section>
+    </main>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+- title: "Process Automation Intern"
+  company: "Ernst & Young (EY)"
+  date: "mar 2026 - today"
+  desc: "developed and implemented automated solutions using Power Automate and Power Apps, streamlining business operations and enhancing effectivity throughout the whole Czech Republic"
+  relevant: true
+
+- title: "Post - Match Analyst"
+  company: "Electronic Arts (EA)"
+  date: "nov 2025 - aug 2026"
+  desc: "executed data validation, cleansing, and anomaly resolution to ensure data integrity and prepare structured datasets for analysis"
+  relevant: true
+
+- title: "Office Manager"
+  company: "Kino STAR"
+  date: "apr 2024 - dec 2024"
+  desc: "managed end-to-end operations, staffing, and programming, leading teams to optimize service quality and meet financial and compliance targets"
+  relevant: true
+
+- title: "Scaffolder"
+  company: "Norisson Company"
+  date: "apr 2024 - jul 2024"
+  desc: "ensured structural stability and safety compliance while installing scaffolding systems in a collaborative team environment"
+  relevant: false
+
+- title: "Electrician"
+  company: "Primus"
+  date: "mar 2024 - apr 2024"
+  desc: "executed precise electrical installations and cabling in a collaborative, safety-focused team environment"
+  relevant: false
+
+- title: "Cinema Staff"
+  company: "Kino STAR"
+  date: "mar 2023 - dec 2023"
+  desc: "delivered front-of-house support across ticketing and concessions, ensuring smooth operations and high guest satisfaction"
+  relevant: false
+
+- title: "Courier"
+  company: "Wolt"
+  date: "nov 2022 - aug 2023"
+  desc: "developed strong communication and driving skills through daily interaction with a diverse customer base while ensuring timely deliveries"
+  relevant: false
+
+- title: "Bartender"
+  company: "Jimmey's coffee and drinks"
+  date: "jun 2022 - oct 2022"
+  desc: "provided versatile bar and floor service, preparing beverages and ensuring efficient operations while maintaining high service standards"
+  relevant: false
+
+- title: "Guest Experience Manager"
+  company: "McDonald's"
+  date: "sep 2021 - jun 2022"
+  desc: "coordinated daily operations and service teams to deliver high-quality guest experiences through proactive issue resolution"
+  relevant: false
+
+- title: "Customer Service Staff"
+  company: "McDonald's"
+  date: "jun 2021 - sep 2021"
+  desc: "advanced from crew to Guest Experience Leader, recognized for adaptability, leadership, and communication skills"
+  relevant: false
