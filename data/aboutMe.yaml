@@ -1,0 +1,14 @@
+paragraph: "I am a Managerial Informatics student at Brno University of Technology with experience in automation, Microsoft 365, low-code systems, data, and workflow optimization. I am developing practical expertise in system defence, Linux, scripting, and threat analysis, with the goal of transitioning into a full-time cybersecurity role."
+
+items:
+  - num: "01"
+    label: "EDUCATION"
+    value: "Managerial Informatics — Brno University of Technology"
+
+  - num: "02"
+    label: "BACKGROUND"
+    value: "Automation, Microsoft 365, low-code systems, and data"
+
+  - num: "03"
+    label: "DIRECTION"
+    value: "Defensive and Offensive cybersecurity, security automation"

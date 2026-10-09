@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="160mm"
+   viewBox="0 0 210 160"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   sodipodi:docname="sk-logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.0975309"
+     inkscape:cx="424.13386"
+     inkscape:cy="343.04274"
+     inkscape:window-width="1920"
+     inkscape:window-height="1080"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g2" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="swatch4"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#f9f9f9;stop-opacity:1;"
+         offset="0"
+         id="stop4" />
+    </linearGradient>
+    <rect
+       x="86.332253"
+       y="85.043709"
+       width="517.99353"
+       height="359.50296"
+       id="rect1" />
+    <rect
+       x="86.332253"
+       y="85.043709"
+       width="517.99353"
+       height="359.50296"
+       id="rect1-7" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g4">
+      <g
+         id="g2"
+         transform="matrix(10.067785,0,0,10.067785,-151.40063,-223.01875)">
+        <rect
+           style="opacity:1;fill:#1a1a1a;stroke-width:1.39861"
+           id="rect2"
+           width="21.23884"
+           height="16.252232"
+           x="14.825"
+           y="22" />
+        <text
+           xml:space="preserve"
+           transform="matrix(0.63694242,0,0,0.68337111,-37.783489,-42.00969)"
+           id="text1-5"
+           style="font-size:20px;line-height:2.2;font-family:gtg;-inkscape-font-specification:gtg;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect1-7);display:inline;fill:#000000;fill-opacity:1;stroke-width:4.04787"><tspan
+             x="86.332031"
+             y="114.54297"
+             id="tspan6"><tspan
+               style="font-family:'Circle Grid';-inkscape-font-specification:'Circle Grid, Normal'"
+               id="tspan5">S</tspan></tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(0.63694241,0,0,0.6833711,-38.008646,-42.199693)"
+           id="text1"
+           style="font-size:20px;line-height:2.2;font-family:gtg;-inkscape-font-specification:gtg;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect1);display:inline;opacity:1;fill:#2497e8;fill-opacity:1;stroke-width:4.04787"><tspan
+             x="86.332031"
+             y="114.54297"
+             id="tspan8"><tspan
+               style="font-family:'Circle Grid';-inkscape-font-specification:'Circle Grid, Normal'"
+               id="tspan7">S</tspan></tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.159px;line-height:2.2;font-family:'Circle Grid';-inkscape-font-specification:'Circle Grid, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;opacity:1;fill:#000000;fill-opacity:1;stroke-width:2.6633"
+           x="27.107525"
+           y="34.938782"
+           id="text2"
+           transform="scale(0.96499602,1.0362737)"><tspan
+             sodipodi:role="line"
+             id="tspan2"
+             style="fill:#000000;fill-opacity:1;stroke-width:2.6633"
+             x="27.107525"
+             y="34.938782">K</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.159px;line-height:2.2;font-family:'Circle Grid';-inkscape-font-specification:'Circle Grid, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#2497e8;fill-opacity:1;stroke-width:2.6633"
+           x="26.951265"
+           y="34.716389"
+           id="text2-7"
+           transform="scale(0.96499602,1.0362737)"><tspan
+             sodipodi:role="line"
+             id="tspan2-0"
+             style="fill:#2497e8;fill-opacity:1;stroke-width:2.6633"
+             x="26.951265"
+             y="34.716389">K</tspan></text>
+      </g>
+      <path
+         d="M 0.57475806,0.6158297 V 159.40477 H 209.47999 V 0.6158297 Z"
+         style="opacity:1;fill:#ffffff;fill-opacity:0;stroke:#f9f9f9;stroke-width:1.07457"
+         id="path4" />
+    </g>
+  </g>
+</svg>

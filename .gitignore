@@ -1,0 +1,8 @@
+
+public/
+
+
+*.kra-autosave
+*(Copy 1)*
+*-raw.svg
+*.sfd

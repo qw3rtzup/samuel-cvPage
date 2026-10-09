@@ -1,0 +1,688 @@
+
+body.debug div div { outline: 2px solid #ff0055 !important; background-color: rgba(255, 0, 85, 0.05) !important; }
+body.debug div div div { outline: 2px solid #00e5ff !important; background-color: rgba(0, 229, 255, 0.05) !important; }
+body.debug div div div div { outline: 2px solid #ffea00 !important; background-color: rgba(255, 234, 0, 0.05) !important; }
+body.debug div div div div div { outline: 2px solid #00ff66 !important; background-color: rgba(0, 255, 102, 0.05) !important; }
+body.debug div div div div div div { outline: 2px solid #8a2be2 !important; background-color: rgba(138, 43, 226, 0.05) !important; }
+
+
+
+
+
+/* -------------- GLOBAL VARIABLES --------------*/
+    
+    @font-face {
+        font-family: 'IBM Plex Mono';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1i8q1w.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+        font-family: 'Doto';
+        font-style: normal;
+        font-weight: 1000;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/doto/v3/t5t6IRMbNJ6TQG7Il_EKPqP9zTnvqouBWho.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @keyframes ledPulse {
+        0%, 100% {
+            opacity: 1;
+            box-shadow: 0 0 6px #00ff66, 
+                        0 0 12px #00ff66cc;
+        }
+        50% {
+            opacity: 0.50;
+            box-shadow: 0 0 2px #00ff66, 
+                        0 0 4px #00ff6680;
+        }
+    }
+
+/* -------------- GLOBAL SETTINGS --------------*/
+
+    html {
+
+        background: #616c75;
+        background: radial-gradient(circle, #616c75 0%, #171c21 100%);
+        background-attachment: fixed;
+        min-height: 100vh;
+    }
+
+    #contentWrapperId {
+        width: 70vw;
+
+        background: linear-gradient(115deg, #a1acbd -30%, #3d4856 50%);
+        background-attachment: fixed;
+
+        box-shadow: 0 0 60px #000000d9;
+        border-left: 1px solid #ffffff0d;
+        border-right: 1px solid #ffffff0d;
+        border-bottom: 1px solid #ffffff0d;
+        border-radius: 0 0 8px 8px;
+    }
+
+    body {
+        font-family: 'IBM Plex Mono', Arial, Helvetica, sans-serif;
+
+        background-position: 0 0;
+        background-attachment: fixed;
+
+        margin-left: 15vw;
+        width: 70vw;
+        min-height: 100vh;
+
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+/* -------------- GLOBE ANIMATION PROPERTIES --------------*/
+    #snowfall-background{
+        position: fixed;
+        left:0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1; 
+        pointer-events: none;
+        overflow: hidden;
+    }
+
+    #globe-background {
+        position: fixed;
+        top: 2%;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 0; 
+        pointer-events: none;
+        overflow: hidden;
+    }
+
+/* --------------  TOP DIV PROPERTIES --------------*/
+
+    #topDivId, .logo{
+        display: flex;
+        align-items: center;
+    }
+
+    #topDivId {
+        position: sticky;
+        top: 4px;
+
+        width: calc(100% - 48px);
+        margin: 8px auto;
+        z-index: 1000;
+
+        padding: 8px 10px;
+        box-sizing: border-box;
+
+        border-radius: 8px;
+
+        background: transparent;
+        box-shadow: none;
+        border: 1px solid transparent;
+
+        transition: background 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    #topDivId.scrolled {
+        background: #A1ACBD;
+        background: linear-gradient(115deg, #a1acbd -30%, rgba(61, 72, 86, 1) 50%);
+        box-shadow: 0 8px 15px #00000080;
+        border: 1px solid #ffffff14;
+    }
+
+    .logo, .cvHyperlink{
+        width: fit-content;
+        padding: 0.5vh 2vw 0.5vh 2vw;
+
+        color: #f1dcc9;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .sk{
+        height: 30px;
+        width: auto;
+    }
+
+    .cvHyperlink {
+        font-size: 20px;
+        margin-left: auto;
+    }
+
+    #typewriterSpan{
+        font-family: 'Doto', Arial, Helvetica, sans-serif;
+        font-size: 110%;
+        color: #2497e8ff;
+        text-shadow: 8px 3px 4px #000000;
+    }
+
+/* -------------- HEADER PROPERTIES --------------*/
+
+    #introDivId {
+        /*outline: 2px solid red;*/
+
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        margin-top: -1vh;
+
+        height: 60vh;
+        width: 70vw;
+    }
+
+    .introPic {
+        /*outline: 2px solid blue;*/
+
+        position: relative;
+        width: 50%;
+        height: 100%;
+        flex-shrink: 0;
+        overflow: visible;
+
+        z-index: 0;
+
+        mask-image: linear-gradient(to bottom, #000000 70%, #00000008 100%);
+    }
+
+    .status {
+        margin: 3% 5% auto auto;
+
+        color: #f1dcc9;
+        .statusIndicator{
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .statusDot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background-color: #00ff66;
+            border-radius: 50%;
+            
+            box-shadow: 0 0 6px #00ff66, 
+                        0 0 12px #00ff6699;
+                        
+            animation: ledPulse 3s infinite ease-in-out;
+        }
+    }
+
+    #authorPhotoShadow{
+        transform: translate(6px, 10px);
+        opacity: 0.4;
+        z-index: 0;
+    }
+
+    #authorPhoto {
+        z-index: 1;
+    }
+
+    #authorPhotoShadow,
+    #authorPhoto {
+        /*outline: 2px solid green;*/
+
+        position: absolute;
+        margin-left: 5%;
+        margin-top: -4%;
+
+        top: 0;
+        left: 0;
+        width: auto;
+        height: 65vh;
+        object-fit: cover;
+    }
+
+    .introText{
+        /*outline: 2px solid yellow;*/
+
+        position: absolute;
+        width:90%;
+        height: auto;
+
+        margin-left: 6%;
+        margin-top: 22%;
+
+        text-align: right;
+
+        color: #f1dcc9;
+        font-size: 2.7vh;
+    }
+
+    /* -------------- BUTTON PROPERTIES --------------*/
+
+        #buttonNavId {
+            /*outline: 2px solid yellow;*/
+
+            margin-top: 3%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1vw;
+        }
+
+        .buttonW, .buttonS, .buttonA {
+            background: transparent;
+            border: none;
+            padding: 2px;
+            cursor: pointer;
+            display: inline-grid;
+            place-items: center;
+        }
+
+        .btn-svg-icon {
+            width: 380px;
+            height: auto;
+            grid-area: 1 / 1; 
+            transition: opacity 0.3s ease, transform 0.2s ease, filter 0.3s ease;
+        }
+
+        .svg-default { opacity: 0.65; }
+        .svg-hover { opacity: 0; }
+        .svg-click { opacity: 0; }
+
+        #buttonNavId button:hover .svg-default { 
+            opacity: 0; 
+        }
+        #buttonNavId button:hover .svg-hover {
+            opacity: 0.95;
+            filter: drop-shadow(0 0 8px #ffffff59);
+        }
+
+        #buttonNavId button:active .svg-default,
+        #buttonNavId button:active .svg-hover {
+            opacity: 0;
+        }
+        #buttonNavId button:active .svg-click {
+            opacity: 0.95;
+            filter: drop-shadow(0 0 8px #0098ff80);
+        }
+
+/* -------------- MAIN PROPERTIES --------------*/
+    #mainId{
+        /*outline: 2px solid green;*/
+        width: 90%;
+
+        margin: 3% 5% 10vh 5%;
+    }
+
+    /* -------------- MAIN TEXT PROPERTIES --------------*/
+
+        .educationHeader, .certificationsHeader, .workHeader, .aboutHeader, .skillsHeader{
+            font-family: 'Doto', Arial, Helvetica, sans-serif;
+
+            font-size: 50px;
+            font-weight: 900;
+            color: #2497e8ff;
+            text-shadow: 5px 2px 3px #000000;
+
+            padding: 10px 0 10px 20px;
+            margin: 0;
+        }
+
+        .title, .role, .desc, .aboutItem {
+            font-family: 'IBM Plex Mono', Arial, Helvetica, sans-serif;
+            color: #f1dcc9;
+            margin: 0; 
+        }
+
+        .title {
+            font-size: 31px;
+            font-weight: 600;
+
+            margin: 0; 
+
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        .role {
+            font-size: 20px;
+            font-weight: 400;
+
+            margin: 0; 
+        }
+
+        .desc {
+            font-size: 25px;
+            font-weight: 400;
+
+            margin: 0; 
+            letter-spacing: 1px;
+        }
+    
+    /* -------------- ABOUT SECTION --------------*/
+
+    #aboutSectionId {
+        position: relative;
+        overflow: hidden;
+
+        padding: 32px 24px;
+
+        background: #0d131968;
+        backdrop-filter: blur(8px);
+
+        border: 1px solid #ffffff14;
+        border-radius: 12px;
+
+        color: #f1dcc9;
+        font-family: 'IBM Plex Mono', monospace;
+    }
+
+    .sectionTag {
+        font-size: 14px;
+        color: #7293bc;
+        letter-spacing: 2px;
+    }
+
+    .aboutHeader {
+        margin: 0;
+    }
+
+    .aboutSummary {
+        font-size: 25px;
+        line-height: 1.65;
+        color: #f1dcc9;
+    }
+
+    /* -------------- ABOUT SECTION - aboutItem, aboutDesc--------------*/
+    .aboutList {
+        border-top: 1px solid #41adff33;
+        padding-top: 32px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .aboutItem {
+        /*outline: 1px solid red !important;*/
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 25px;
+    }
+
+    .aboutNum {
+        /*outline: 1px solid yellow !important;*/
+        font-family: 'Doto', Arial, Helvetica, sans-serif;
+        color: #249fe8;
+        font-weight: bold;
+
+        font-size: 50px;
+        min-width: 50px;
+    }
+
+    .aboutDesc {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 16px;
+        align-items: center;
+    }
+
+    .aboutLabel {
+        /*outline: 1px solid green !important;*/
+        min-width: 160px;
+    }
+
+
+    /* -------------- SKILLS TEXT PROPERTIES --------------*/
+
+        .skillsSectionId {
+            position: relative;
+            overflow: hidden;
+
+            padding: 32px 24px;
+
+            background: #0d131968;
+            backdrop-filter: blur(8px);
+
+            border: 1px solid #ffffff14;
+            border-radius: 12px;
+
+            color: #f1dcc9;
+            font-family: 'IBM Plex Mono', monospace;
+        }
+
+        .skillsHeader {
+            margin-top: 38px;
+        }
+
+        .skillsCategory {
+            margin-bottom: 25px;
+        }
+
+        /* -------------- PILL PROPERTIES --------------*/
+
+            .focusCard {
+                position: relative;
+                background: #0f1720bf;
+                border: 1px solid #41adff40;
+                padding: 20px;
+                border-radius: 4px;
+                margin: 20px 0 30px 0;
+                backdrop-filter: blur(8px);
+            }
+
+            .cyber-corners::before, 
+            .cyber-corners::after {
+                content: '';
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                border-color: #67c7ff;
+                border-style: solid;
+                pointer-events: none;
+            }
+
+            .cyber-corners::before { top: -1px; left: -1px; border-width: 2px 0 0 2px; }
+            .cyber-corners::after { bottom: -1px; right: -1px; border-width: 0 2px 2px 0; }
+
+            .cardHeader {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+
+            .cardTitle {
+                font-size: 0.8rem;
+                letter-spacing: 2px;
+                color: #67c7ff;
+                font-weight: bold;
+            }
+
+            .focusText {
+                font-size: 0.95rem;
+                color: #e8ded5;
+                margin: 0;
+                line-height: 1.55;
+            }
+
+            /* ==========================================
+            4. TECH SKILLS & PILLS REDESIGN
+            ========================================== */
+            .skillsHeader, .educationHeader, .workHeader, .certificationsHeader {
+                font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+                color: #249fe8;
+                margin: 32px 0 24px 0;
+            }
+
+            .skillsCategory {
+                margin-bottom: 24px;
+            }
+
+            .skillsCategory .title {
+                font-size: 0.8rem;
+                letter-spacing: 1.5px;
+                color: #7293bc;
+                margin-bottom: 12px;
+                text-transform: uppercase;
+            }
+
+            .pill-group {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .pill {
+                background: #2497e814;
+                border: 1px solid #41adff40;
+                color: #aebbc5;
+                padding: 6px 14px;
+                border-radius: 4px; /* Taktickejší hranatý tvar namiesto 6px */
+                font-size: 0.85rem;
+                font-family: 'IBM Plex Mono', monospace;
+                transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+                cursor: default;
+            }
+
+            .pill:hover {
+                background: #2497e833;
+                border-color: #67c7ff;
+                color: #ffffff;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 14px #249fe840;
+            }
+
+            .pill--featured {
+                background: #249fe838;
+                border-color: #249fe8;
+                color: #eaf8ff;
+                font-weight: 600;
+                box-shadow: 0 0 10px #249fe833;
+            }
+
+            .pill--featured:hover {
+                box-shadow: 0 0 18px #67c7ff66;
+            }
+
+            /* ==========================================
+            5. CYBER-SIGILISM: TIMELINE (WORK / EDUCATION)
+            ========================================== */
+            .timeline {
+                border-left: 2px solid rgba(65, 173, 255, 0.2);
+                margin-left: 12px;
+                padding-left: 24px;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                margin-bottom: 32px;
+            }
+
+            .timelineItem {
+                position: relative;
+            }
+
+            /* Taktický zameriavač pre položky na časovej osi */
+            .timelineItem::before {
+                content: '';
+                position: absolute;
+                left: -30px;
+                top: 4px;
+                width: 10px;
+                height: 10px;
+                background: #1f2d3b;
+                border: 2px solid #249fe8;
+                border-radius: 2px;
+                transition: all 0.3s ease;
+            }
+
+            .timelineItem:hover::before {
+                background: #00ff66;
+                border-color: #00ff66;
+                box-shadow: 0 0 8px #00ff66;
+            }
+
+            .timelineItem .title {
+                font-size: 1.05rem;
+                color: #f1dcc9;
+                margin: 0 0 4px 0;
+            }
+
+            .timelineItem .date {
+                color: #7293bc;
+                font-size: 0.85rem;
+            }
+
+            .timelineItem .role {
+                color: #249fe8;
+                font-weight: 600;
+                font-size: 0.9rem;
+                margin: 0 0 8px 0;
+            }
+
+            .timelineItem .desc {
+                color: #aebbc5;
+                font-size: 0.9rem;
+                line-height: 1.5;
+                margin: 0;
+            }
+
+/* Certifikáty */
+.certificateGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.certificateGrid .item {
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid #67c7ff;
+    padding: 16px;
+    border-radius: 0 4px 4px 0;
+    transition: all 0.2s ease;
+}
+
+.certificateGrid .item:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: #00ff66;
+}
+
+
+    .timelineItem {
+        /*outline: 1px solid red !important;*/
+        padding: 3px 0 0 0;
+        margin-bottom: 12px;
+    }
+
+/* -------------- FOOTER PROPERTIES --------------*/
+    #siteFooterId {
+        margin-top: 8px;
+        height: 7vh;
+        width: 100%;
+
+        display: flex;
+        justify-content: center; 
+        align-items: center;     
+
+        font-size: 15px;
+        color: #f1dcc9;
+
+        position: relative;
+        z-index: 2000;
+        box-sizing: border-box;
+
+        background-color: #252a30!important;
+        box-shadow: 0 0 60px rgba(0, 0, 0, 0.85);
+        opacity: 90%;
+
+        border-radius: 8px 8px 0 0;
+    }
+
+
+    .footer-author {
+        margin: 0;
+    }

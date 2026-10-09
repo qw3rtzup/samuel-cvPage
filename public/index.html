@@ -1,220 +1,356 @@
 <!DOCTYPE html>
 <html lang="sk">
-<head>
+
+    <head>
 	<meta name="generator" content="Hugo 0.123.7"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samuel Kokoška - Portfolio</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-<body>
-    <div id="scrollProgress"></div>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Samuel Kokoška - Portfolio</title>
+        <link rel="icon" type="image/svg+xml" href="/pic/sk-logo.svg">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
 
-    <div class="topDiv">
-        <div class="logo">
-            <img class="sk" alt="SK logo" src="/pic/Untitled-SK.png" height="35" width="35">
-            <p>Samuel Kokoška</p>
-        </div>
-        <a class="hyperlink" href="/documents/SamuelKokoškaCV.pdf" target="_blank">RESUME PDF</a>
-    </div>
+    <body>
+        <body class="debug"></body>
 
-    <header>
-        <div class="introDiv">
-            <div class="selfie">
-                <img src="/pic/selfie.jpg" alt="Samuel" width="430">
-            </div>
-            <div class="intro">
-                <h2>HI THERE, I AM</h2>
-                <h1><span id="typewriterSpan">almostAbachelor.</span> Samuel Kokoška</h1>
-            </div>
-        </div>
-
-        <nav>
-            <button class="button" onclick="switchTab('about', this)">ABOUT ME</button>
-            <button class="button" onclick="switchTab('studies', this)">STUDIES</button>
-        </nav>
-    </header>
-
-    <main>
-        
-        <section id="about" class="tabContent">
-            <h3 class="aboutContenth3">⚙️ tech skills</h3>
-            <div class="skillBars">
-                
-                <div class="skillItem">
-                    <div class="skillLabel">
-                        <span>Python</span><span class="skillPct">75%</span>
-                    </div>
-                    <div class="skillTrack"><div class="skillFill" style="width: 75%;"></div></div>
-                </div>
-                
-                <div class="skillItem">
-                    <div class="skillLabel">
-                        <span>SQL</span><span class="skillPct">65%</span>
-                    </div>
-                    <div class="skillTrack"><div class="skillFill" style="width: 65%;"></div></div>
-                </div>
-                
-                <div class="skillItem">
-                    <div class="skillLabel">
-                        <span>PowerBI</span><span class="skillPct">70%</span>
-                    </div>
-                    <div class="skillTrack"><div class="skillFill" style="width: 70%;"></div></div>
-                </div>
-                
-                <div class="skillItem">
-                    <div class="skillLabel">
-                        <span>Data Engineering</span><span class="skillPct">60%</span>
-                    </div>
-                    <div class="skillTrack"><div class="skillFill" style="width: 60%;"></div></div>
-                </div>
-                
-                <div class="skillItem">
-                    <div class="skillLabel">
-                        <span>HTML / CSS / JS</span><span class="skillPct">55%</span>
-                    </div>
-                    <div class="skillTrack"><div class="skillFill" style="width: 55%;"></div></div>
-                </div>
-                
-            </div>
-        </section>
-
-        
-        <section id="studies" class="tabContent">
-            <h3 class="edu">🎓 education</h3>
-            <div class="timeline">
-                
-                <div class="timelineItem">
-                    <h4 class="title">Brno University of Technology <span class="date">sep 2024 - today</span></h4>
-                    <p class="role">Managerial Informatics</p>
-                    <p class="desc"><i>- focus on connecting IT with Business environment</i></p>
-                </div>
-                
-                <div class="timelineItem">
-                    <h4 class="title">Slovak University of Technology in Bratislava <span class="date">sep 2023 - mar 2024</span></h4>
-                    <p class="role">Applied Informatics</p>
-                    <p class="desc"><i>- implementing software and hardware driven solutions</i></p>
-                </div>
-                
-                <div class="timelineItem">
-                    <h4 class="title">Prešov High School of Mechanical Engineering <span class="date">sep 2019 - jun 2023</span></h4>
-                    <p class="role">Mechatronics</p>
-                    <p class="desc"><i>- linking Informatics, Mechanical Engineering, Electrical Engineering and Automation together</i></p>
-                </div>
-                
-            </div>
-
-            <h3 class="edu">📜 certifications</h3>
-            <div class="certificateGrid">
-                
-                <div class="certificateItem">
-                    <h4 class="title">Zebra Technologies PowerBI Academy</h4>
-                    <span class="date">oct 2025 - jan 2025</span>
-                    <p class="role">Data Analytics</p>
-                    <p class="desc">Credential ID: 00009/26</p>
-                </div>
-                
-                <div class="certificateItem">
-                    <h4 class="title">Using Software Support in Project Management</h4>
-                    <span class="date">nov 2025 - jan 2026</span>
-                    <p class="role">Project Management</p>
-                    <p class="desc">Credential ID: CZ-26510-2025-000054</p>
-                </div>
-                
-                <div class="certificateItem">
-                    <h4 class="title">§21 Electrotechnician</h4>
-                    <span class="date">sep 2022 - jun 2023</span>
-                    <p class="role">Electrical Engineering</p>
-                    <p class="desc">Credential ID: 2023/§21/017</p>
-                </div>
-                
-                <div class="certificateItem">
-                    <h4 class="title">English Proficiency C1</h4>
-                    <span class="date">sep 2015 - jun 2019</span>
-                    <p class="role">Language Learning</p>
-                    <p class="desc">C1 English Course</p>
-                </div>
-                
-            </div>
-        </section>
-
-        
-        <section id="experience" class="tabContent">
-            
-            <h3 class="edu">💼 relevant experience</h3>
-            <div class="timeline">
-                
-                <div class="timelineItem">
-                    <h4 class="title">Process Automation Intern <span class="date">mar 2026 - today</span></h4>
-                    <p class="role">Ernst &amp; Young (EY)</p>
-                    <p class="desc"><i>- developed and implemented automated solutions using Power Automate and Power Apps, streamlining business operations and enhancing effectivity throughout the whole Czech Republic</i></p>
-                </div>
-                
-                <div class="timelineItem">
-                    <h4 class="title">Post - Match Analyst <span class="date">nov 2025 - aug 2026</span></h4>
-                    <p class="role">Electronic Arts (EA)</p>
-                    <p class="desc"><i>- executed data validation, cleansing, and anomaly resolution to ensure data integrity and prepare structured datasets for analysis</i></p>
-                </div>
-                
-                <div class="timelineItem">
-                    <h4 class="title">Office Manager <span class="date">apr 2024 - dec 2024</span></h4>
-                    <p class="role">Kino STAR</p>
-                    <p class="desc"><i>- managed end-to-end operations, staffing, and programming, leading teams to optimize service quality and meet financial and compliance targets</i></p>
-                </div>
-                
-            </div>
+        <div id="contentWrapperId">
 
             
-            <h3 class="edu" style="margin-top: 2.5rem;">🛠️ other work experience</h3>
-            <div class="timeline">
-                
-                <div class="timelineItem">
-                    <h4 class="title">Scaffolder <span class="date">apr 2024 - jul 2024</span></h4>
-                    <p class="role">Norisson Company</p>
-                    <p class="desc"><i>- ensured structural stability and safety compliance while installing scaffolding systems in a collaborative team environment</i></p>
-                </div>
-                
-                <div class="timelineItem">
-                    <h4 class="title">Electrician <span class="date">mar 2024 - apr 2024</span></h4>
-                    <p class="role">Primus</p>
-                    <p class="desc"><i>- executed precise electrical installations and cabling in a collaborative, safety-focused team environment</i></p>
-                </div>
-                
-                <div class="timelineItem">
-                    <h4 class="title">Cinema Staff <span class="date">mar 2023 - dec 2023</span></h4>
-                    <p class="role">Kino STAR</p>
-                    <p class="desc"><i>- delivered front-of-house support across ticketing and concessions, ensuring smooth operations and high guest satisfaction</i></p>
-                </div>
-                
-                <div class="timelineItem">
-                    <h4 class="title">Courier <span class="date">nov 2022 - aug 2023</span></h4>
-                    <p class="role">Wolt</p>
-                    <p class="desc"><i>- developed strong communication and driving skills through daily interaction with a diverse customer base while ensuring timely deliveries</i></p>
-                </div>
-                
-                <div class="timelineItem">
-                    <h4 class="title">Bartender <span class="date">jun 2022 - oct 2022</span></h4>
-                    <p class="role">Jimmey&#39;s coffee and drinks</p>
-                    <p class="desc"><i>- provided versatile bar and floor service, preparing beverages and ensuring efficient operations while maintaining high service standards</i></p>
-                </div>
-                
-                <div class="timelineItem">
-                    <h4 class="title">Guest Experience Manager <span class="date">sep 2021 - jun 2022</span></h4>
-                    <p class="role">McDonald&#39;s</p>
-                    <p class="desc"><i>- coordinated daily operations and service teams to deliver high-quality guest experiences through proactive issue resolution</i></p>
-                </div>
-                
-                <div class="timelineItem">
-                    <h4 class="title">Customer Service Staff <span class="date">jun 2021 - sep 2021</span></h4>
-                    <p class="role">McDonald&#39;s</p>
-                    <p class="desc"><i>- advanced from crew to Guest Experience Leader, recognized for adaptability, leadership, and communication skills</i></p>
-                </div>
-                
-            </div>
-        </section>
-    </main>
+            <div id="snowfall-background"></div>
+            <div id="globe-background"></div>
 
-    <script src="/js/script.js"></script>
-</body>
+            
+            <div id="topDivId">
+                <div class="logo">
+                    <img class="sk" alt="sk-logo" src="/pic/sk-logo.svg" height="35" width="35">
+                    <span id="logo-author" style="margin-left: 10px">Samuel Kokoška</span>
+                </div>
+                <span class="cvHyperlink" href="/documents/Samuel_Kokoska_CV.pdf" target="_blank">RESUME PDF</span>
+            </div>
+
+            <header>
+                
+                <div id="introDivId">
+                    <div class="introPic">
+                        <img id="authorPhotoShadow" src="/pic/author-photo-shadow.png" alt="author-photo-shadow" width="250">
+                        <img id="authorPhoto" src="/pic/author-photo.png" alt="author-photo" width="250">
+                    </div>
+
+                    <div class="status">
+                        <span class="statusIndicator">SEC_OPS_STATUS: </span><span class="statusDot"></span>
+                    </div>
+                    
+                    <div class="introText">
+                        <h2>HI THERE, I AM<p></p></h2>
+                        <h1>
+                            <span id="typewriterSpan">almostAbachelor. </span>
+                            <span id="authorName">Samuel Kokoška</span>
+                        </h1>
+                    </div>
+                </div>
+
+                
+                <nav id="buttonNavId">
+                    <button class="buttonA" onclick="switchTab('aboutSectionId', this)">
+                        <img src="/pic/about-me-dark.svg" alt="About Dark" class="btn-svg-icon svg-default" />
+                        <img src="/pic/about-me-light.svg" alt="About Light" class="btn-svg-icon svg-hover" />
+                        <img src="/pic/about-me-blue.svg" alt="About Blue" class="btn-svg-icon svg-click" />
+                    </button>
+
+                    <button class="buttonS" onclick="switchTab('educationSectionId', this)">
+                        <img src="/pic/education-dark.svg" alt="Education Dark" class="btn-svg-icon svg-default" />
+                        <img src="/pic/education-light.svg" alt="Education Light" class="btn-svg-icon svg-hover" />
+                        <img src="/pic/education-blue.svg" alt="Education Blue" class="btn-svg-icon svg-click" />
+                    </button>
+                    
+                    <button class="buttonW" onclick="switchTab('workSectionId', this)">
+                        <img src="/pic/work-experience-dark.svg" alt="Work Dark" class="btn-svg-icon svg-default" />
+                        <img src="/pic/work-experience-light.svg" alt="Work Light" class="btn-svg-icon svg-hover" />
+                        <img src="/pic/work-experience-blue.svg" alt="Work Blue" class="btn-svg-icon svg-click" />
+                    </button>
+                </nav>
+            </header>
+
+            <main id="mainId">
+
+                
+                <section id="aboutSectionId" class="tabContent">
+                    <div class="about-background" aria-hidden="true"></div>
+                    <div class="about-overlay" aria-hidden="true"></div>
+
+                    <div class="aboutWrapper">
+                        <div class="sectionTag">// IDENTITY_MODULE</div>
+                        <h3 class="aboutHeader">WHO AM I?</h3>
+
+                        <p class="aboutSummary">
+                            <span class="aboutParagraph">I am a Managerial Informatics student at Brno University of Technology with experience in automation, Microsoft 365, low-code systems, data, and workflow optimization. I am developing practical expertise in system defence, Linux, scripting, and threat analysis, with the goal of transitioning into a full-time cybersecurity role.</span>
+                        </p>
+
+                        <div class="aboutList">
+                            
+                                <div class="aboutItem">
+                                    <span class="aboutNum">01</span>
+                                    <div class="aboutDesc">
+                                        <span class="aboutLabel">EDUCATION</span>
+                                        <span class="aboutValue">Managerial Informatics — Brno University of Technology</span>
+                                    </div>
+                                </div>
+                            
+                                <div class="aboutItem">
+                                    <span class="aboutNum">02</span>
+                                    <div class="aboutDesc">
+                                        <span class="aboutLabel">BACKGROUND</span>
+                                        <span class="aboutValue">Automation, Microsoft 365, low-code systems, and data</span>
+                                    </div>
+                                </div>
+                            
+                                <div class="aboutItem">
+                                    <span class="aboutNum">03</span>
+                                    <div class="aboutDesc">
+                                        <span class="aboutLabel">DIRECTION</span>
+                                        <span class="aboutValue">Defensive and Offensive cybersecurity, security automation</span>
+                                    </div>
+                                </div>
+                            
+                        </div>
+
+                    </div>
+                </section>
+
+                
+                <section id="skillsSectionId" class="tabContent">
+                    <h3 class="skillsHeader">WHAT DO I KNOW?</h3>
+
+                    
+                    
+                    <div class="focusCard cyber-corners">
+                        <div class="cardHeader">
+                            <span class="cardTitle">CURRENT FOCUS</span>
+                        </div>
+                        <p class="focusText">Blue &amp; Red team fundamentals, Linux hardening, security automation and practical threat analysis.</p>
+                    </div>
+                    
+
+                    
+                    
+                    <div class="skillsCategory">
+                        <h4 class="title">FEATURED SKILLS</h4>
+                        <div class="pill-group">
+                            
+                                <span class="pill pill--featured">Python</span>
+                            
+                                <span class="pill pill--featured">Linux</span>
+                            
+                                <span class="pill pill--featured">Bash</span>
+                            
+                        </div>
+                    </div>
+                    
+
+                    
+                    
+                        <div class="skillsCategory">
+                            <h4 class="title">LANGUAGES &amp; WEB</h4>
+                            <div class="pill-group">
+                                
+                                    <span class="pill">Python</span>
+                                
+                                    <span class="pill">Bash</span>
+                                
+                                    <span class="pill">C</span>
+                                
+                                    <span class="pill">SQL</span>
+                                
+                                    <span class="pill">VBA</span>
+                                
+                                    <span class="pill">HTML</span>
+                                
+                                    <span class="pill">CSS</span>
+                                
+                                    <span class="pill">JavaScript</span>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="skillsCategory">
+                            <h4 class="title">MICROSOFT 365 &amp; LOW-CODE</h4>
+                            <div class="pill-group">
+                                
+                                    <span class="pill">Power Apps</span>
+                                
+                                    <span class="pill">Power Automate</span>
+                                
+                                    <span class="pill">Microsoft 365</span>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="skillsCategory">
+                            <h4 class="title">DATA &amp; ANALYTICS</h4>
+                            <div class="pill-group">
+                                
+                                    <span class="pill">Power BI</span>
+                                
+                                    <span class="pill">Data Engineering</span>
+                                
+                                    <span class="pill">Data Analysis</span>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="skillsCategory">
+                            <h4 class="title">TOOLS &amp; INFRASTRUCTURE</h4>
+                            <div class="pill-group">
+                                
+                                    <span class="pill">GitHub</span>
+                                
+                                    <span class="pill">Git</span>
+                                
+                                    <span class="pill">Linux</span>
+                                
+                                    <span class="pill">Terminal</span>
+                                
+                                    <span class="pill">Virtual Machines</span>
+                                
+                                    <span class="pill">Hugo</span>
+                                
+                            </div>
+                        </div>
+                    
+                </section>
+
+                
+                <section id="educationSectionId" class="tabContent">
+
+                    <h3 class="educationHeader">WHERE DID I STUDY?</h3>
+                    <div class="timeline">
+                        
+                        <div class="timelineItem">
+                            <h4 class="title"><b>Brno University of Technology</b> | <span class="date">sep 2024 - today</span></h4>
+                            <p class="role">Managerial Informatics</p>
+                            <p class="desc"><i> ~ focus on connecting IT with Business environment</i></p>
+                        </div>
+                        
+                        <div class="timelineItem">
+                            <h4 class="title"><b>Slovak University of Technology in Bratislava</b> | <span class="date">sep 2023 - mar 2024</span></h4>
+                            <p class="role">Applied Informatics</p>
+                            <p class="desc"><i> ~ implementing software and hardware driven solutions</i></p>
+                        </div>
+                        
+                        <div class="timelineItem">
+                            <h4 class="title"><b>Prešov High School of Mechanical Engineering</b> | <span class="date">sep 2019 - jun 2023</span></h4>
+                            <p class="role">Mechatronics</p>
+                            <p class="desc"><i> ~ linking Informatics, Mechanical Engineering, Electrical Engineering and Automation together</i></p>
+                        </div>
+                        
+                    </div>
+
+                    <h3 class="certificationsHeader">CERTIFICATIONS</h3>
+                    <div class="certificateGrid">
+                        
+                        <div class="item">
+                            <h4 class="title"><b>Zebra Technologies PowerBI Academy</b> | <span class="date">oct 2025 - jan 2025</span></h4>
+                            <p class="role">Branch: Data Analytics</p>
+                            <p class="desc">Credential ID: 00009/26</p>
+                        </div>
+                        
+                        <div class="item">
+                            <h4 class="title"><b>Using Software Support in Project Management</b> | <span class="date">nov 2025 - jan 2026</span></h4>
+                            <p class="role">Branch: Project Management</p>
+                            <p class="desc">Credential ID: CZ-26510-2025-000054</p>
+                        </div>
+                        
+                        <div class="item">
+                            <h4 class="title"><b>§21 Electrotechnician</b> | <span class="date">sep 2022 - jun 2023</span></h4>
+                            <p class="role">Branch: Electrical Engineering</p>
+                            <p class="desc">Credential ID: 2023/§21/017</p>
+                        </div>
+                        
+                        <div class="item">
+                            <h4 class="title"><b>English Proficiency C1</b> | <span class="date">sep 2015 - jun 2019</span></h4>
+                            <p class="role">Branch: Language Learning</p>
+                            <p class="desc">C1 English Course</p>
+                        </div>
+                        
+                    </div>
+
+                </section>
+
+                
+                <section id="workSectionId" class="tabContent">
+
+                    <h3 class="workHeader">WHAT DID I DO?</h3>
+
+                    <div class="timeline">
+                        
+                        <div class="timelineItem">
+                            <h4 class="title"><b>Process Automation Intern</b> <span> | </span> <span class="date">mar 2026 - today</span></h4>
+                            <p class="role">Ernst &amp; Young (EY)</p>
+                            <p class="desc"><i> ~ Developed and implemented automated solutions using Power Automate and Power Apps, streamlining business operations and enhancing effectivity throughout the whole Czech Republic</i></p>
+                        </div>
+                        
+                        <div class="timelineItem">
+                            <h4 class="title"><b>Post - Match Analyst</b> <span> | </span> <span class="date">nov 2025 - aug 2026</span></h4>
+                            <p class="role">Electronic Arts (EA)</p>
+                            <p class="desc"><i> ~ Executed data validation, cleansing, and anomaly resolution to ensure data integrity and prepare structured datasets for analysis</i></p>
+                        </div>
+                        
+                        <div class="timelineItem">
+                            <h4 class="title"><b>Office Manager</b> <span> | </span> <span class="date">apr 2024 - dec 2024</span></h4>
+                            <p class="role">Kino STAR</p>
+                            <p class="desc"><i> ~ Managed end-to-end operations, staffing, and programming, leading teams to optimize service quality and meet financial and compliance targets</i></p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="timeline">
+                        
+                        <div class="timelineItem">
+                            <h4 class="title"><b>Scaffolder</b> <span> | </span> <span class="date">apr 2024 - jul 2024</span></h4>
+                            <p class="role">Norisson Company</p>
+                            <p class="desc"><i>- ~ Ensured structural stability and safety compliance while installing scaffolding systems in a collaborative team environment</i></p>
+                        </div>
+                        
+                        <div class="timelineItem">
+                            <h4 class="title"><b>Electrician</b> <span> | </span> <span class="date">mar 2024 - apr 2024</span></h4>
+                            <p class="role">Primus</p>
+                            <p class="desc"><i>- ~ Executed precise electrical installations and cabling in a collaborative, safety-focused team environment</i></p>
+                        </div>
+                        
+                        <div class="timelineItem">
+                            <h4 class="title"><b>Courier</b> <span> | </span> <span class="date">nov 2022 - aug 2023</span></h4>
+                            <p class="role">Wolt</p>
+                            <p class="desc"><i>- ~ Developed strong communication and driving skills through daily interaction with a diverse customer base while ensuring timely deliveries</i></p>
+                        </div>
+                        
+                        <div class="timelineItem">
+                            <h4 class="title"><b>Bartender</b> <span> | </span> <span class="date">jun 2022 - oct 2022</span></h4>
+                            <p class="role">Jimmey&#39;s coffee and drinks</p>
+                            <p class="desc"><i>- ~ Provided versatile bar and floor service, preparing beverages and ensuring efficient operations while maintaining high service standards</i></p>
+                        </div>
+                        
+                        <div class="timelineItem">
+                            <h4 class="title"><b>Guest Experience Manager</b> <span> | </span> <span class="date">sep 2021 - jun 2022</span></h4>
+                            <p class="role">McDonald&#39;s</p>
+                            <p class="desc"><i>- ~ Coordinated daily operations and service teams to deliver high-quality guest experiences through proactive issue resolution</i></p>
+                        </div>
+                        
+                    </div>
+
+                </section>
+
+            </main>
+        </div>
+
+        <footer id="siteFooterId">
+            <p class="footer-author">// SAMUEL KOKOŠKA © <span id="currentYear"></span></p>
+        </footer>
+
+        <script type="module" src="/js/globe.js"></script>
+        <script src="/js/snowfall.js"></script>
+        <script src="/js/switchTab.js"></script>
+        <script src="/js/scroll.js"></script>
+        <script src="/js/clock.js"></script>
+    </body>
+
 </html>

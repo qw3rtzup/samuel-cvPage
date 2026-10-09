@@ -1,10 +1,16 @@
-- name: "Python"
-  level: 75
-- name: "SQL"
-  level: 65
-- name: "PowerBI"
-  level: 70
-- name: "Data Engineering"
-  level: 60
-- name: "HTML / CSS / JS"
-  level: 55
+focus: "Blue & Red team fundamentals, Linux hardening, security automation and practical threat analysis."
+
+featured:
+  - "Python"
+  - "Linux"
+  - "Bash"
+
+categories:
+  - category: "LANGUAGES & WEB"
+    items: "Python / Bash / C / SQL / VBA / HTML / CSS / JavaScript"
+  - category: "MICROSOFT 365 & LOW-CODE"
+    items: "Power Apps / Power Automate / Microsoft 365"
+  - category: "DATA & ANALYTICS"
+    items: "Power BI / Data Engineering / Data Analysis"
+  - category: "TOOLS & INFRASTRUCTURE"
+    items: "GitHub / Git / Linux / Terminal / Virtual Machines / Hugo"
